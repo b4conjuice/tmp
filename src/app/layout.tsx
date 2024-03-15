@@ -3,7 +3,7 @@ import { TRPCReactProvider } from '@/trpc/react'
 
 import '@/styles/globals.css'
 
-const DEFAULT_TITLE = 'b4-app'
+const DEFAULT_TITLE = 'tmp'
 
 export const metadata = {
   manifest: '/manifest.json',
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <div className='bg-cb-dark-blue text-cb-white flex min-h-screen flex-col'>
+        <div className='flex min-h-screen flex-col bg-cb-dark-blue text-cb-white'>
           <TRPCReactProvider>{children}</TRPCReactProvider>
         </div>
       </body>
